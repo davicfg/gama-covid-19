@@ -1,6 +1,49 @@
-<!DOCTYPE html>
-  </head>
-  <body>
-    Contato
-  </body>
+<html>
+
+<head>
+  <title>.: Portal Covid-19 :.</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <main>
+    <section id="conteudo">
+      <div class="banner">
+        <div class="title">
+          <nav id="menu">
+            <div><a href="../index.html"> Home </a></div>
+            <div><a href="sobre.html"> Sobre </a></div>
+            <div><a href="contato.html"> Contato </a></div>
+            <div><a href="saibamais.html"> Saiba Mais </a></div>
+          </nav>
+        </div>
+      </div>
+      <form name="contact" method="POST" data-netlify="true">
+        <p>
+          <label>Your Name: <input type="text" name="name" /></label>   
+        </p>
+        <p>
+          <label>Your Email: <input type="email" name="email" /></label>
+        </p>
+        <p>
+          <label>Your Role: <select name="role[]" multiple>
+            <option value="leader">Leader</option>
+            <option value="follower">Follower</option>
+          </select></label>
+        </p>
+        <p>
+          <label>Message: <textarea name="message"></textarea></label>
+        </p>
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </form>
+    </section>
+    <footer>
+      <h3>Portal Covid-19</h3>
+    </footer>
+
+  </main>
+</body>
+
 </html>
