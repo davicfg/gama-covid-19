@@ -3,6 +3,7 @@
 <head>
   <title>.: Portal Covid-19 :.</title>
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/contato.css">
 </head>
 
 <body>
@@ -18,21 +19,21 @@
           </nav>
         </div>
       </div>
-      <form class="form" name="contact" method="POST" data-netlify="true">
-        <p>
-          <label>Seu nome: <input type="text" name="name" /></label>   
-        </p>
-        <p>
-          <label>Email: <input type="email" name="email" /></label>
-        </p>
-        <p>
-          <label>Mensagem: <textarea name="message"></textarea></label>
-        </p>
-        <input type="hidden" name="redirect" value="obrigado.html">
-        <p>
-          <button type="submit">Enviar</button>
-        </p>
-      </form>
+      <div class="form-container">
+        <form class="form" name="contact" method="POST" data-netlify="true">
+
+          <label for="name">Seu nome: </label>
+          <input id="name" type="text" name="name" />
+
+          <label for="email">Email: </label>
+          <input id="email" type="email" name="email" />
+
+          <label for="message">Mensagem: </label>
+          <textarea id="message" name="message"></textarea>
+
+          <input type="submit" value="Enviar"></input>
+        </form>
+      </div>
     </section>
     <footer>
       <h3>Portal Covid-19</h3>
