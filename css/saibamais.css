@@ -5,8 +5,9 @@
 }
 
 #fontes .dados {
-  display: flex;
-  justify-content: space-between;
+  float: left;
+  /* display: flex;
+  justify-content: space-between; */
   border: gray 1px solid;
   margin-left: 10px;
   margin-right: 10px;
@@ -19,7 +20,9 @@
 }
 
 #fontes .dados img {
+  margin: 10px;
   width: 10%;
+  border-radius: 50%;
 }
 
 #fontes .dados h5 {
